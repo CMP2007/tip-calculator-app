@@ -1,0 +1,39 @@
+html{background-color: hsl(185, 41%, 84%)}
+main{
+    width: 375px;
+    margin: auto;
+}
+.logo{
+    padding: 2.5rem 8.5rem;
+}
+form{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5vw;
+    padding: 2rem;
+}
+.sect1_span, .sect2_spanBig{
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.sect1_div1, .sect1_div2, .sect1_div3{margin-bottom: 2rem;}
+.sect1_div1{
+    border: 2px red solid;
+}
+.sect1_div2{
+    border: 2px blue solid;
+}
+.sect1_div3 {
+    border: 2px green solid;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
