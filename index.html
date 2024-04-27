@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalice.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
   
   <title>Tip calculator app</title>
 
@@ -19,37 +23,43 @@
     <form>
       <section>
         <div class="sect1_div1">
-          <span class="sect1_span">Bill</span>
+          <span class="sect1_span space-mono-bold">Bill</span>
           <img src="./images/icon-dollar.svg" class="dollar" alt="">
-          <input type="number" min="0.00" step="0.01" placeholder="0">
+          <input type="number" min="0.00" step="0.01" placeholder="0" class="space-mono-bold">
         </div>
         <div class="sect1_div2">
-          <span class="sect1_span">Select Tip %</span>
-          <input type="button" class="button" value="5%">
-          <input type="button" class="button" value="10%">
-          <input type="button" class="button" value="15%">
-          <input type="button" class="button" value="25%">
-          <input type="button" class="button" value="50%">
-          <input type="button" class="button" value="Custom">
+          <span class="sect1_span space-mono-bold">Select Tip %</span>
+          <div class="buttonContainer">
+            <input type="button" class="button space-mono-bold" value="5%">
+            <input type="button" class="button space-mono-bold" value="10%">
+            <input type="button" class="button space-mono-bold" value="15%">
+            <input type="button" class="button space-mono-bold" value="25%">
+            <input type="button" class="button space-mono-bold" value="50%">
+            <input type="button" class="button space-mono-bold button_click" value="Custom">
+          </div>
         </div>
         <div class="sect1_div3">
-          <span class="sect1_span">Number of People</span>
+          <span class="sect1_span space-mono-bold">Number of People</span>
           <img src="./images/icon-person.svg" class="person">
-          <input type="number" min="0.00" step="1" placeholder="0">
+          <input type="number" min="0.00" step="1" placeholder="0" class="space-mono-bold">
         </div>
       </section>
-      <section>
-        <div class="sect2_div1">
-          <span class="sect2_spanBig">Tip Amount</span>
-          <span class="sect2_span">/ person</span>
-          <label></label>
+      <section class="second">
+        <div class="sect2_div">
+          <div>
+            <span class="sect2_spanBig space-mono-bold">Tip Amount</span>
+            <span class="sect2_span space-mono-bold">/ person</span>
+          </div>
+          <label class="right space-mono-bold">$4.27</label>
         </div>
-        <div class="sect2_div2">
-          <span class="sect2_spanBig">Total</span>
-          <span class="sect2_span">/ person</span>
-          <label></label>
+        <div class="sect2_div">
+          <div>
+            <span class="sect2_spanBig space-mono-bold">Total</span>
+            <span class="sect2_span space-mono-bold">/ person</span>
+          </div>
+          <label class="right space-mono-bold">$32.79</label>
         </div>
-        <button type="reset">Reset</button>
+        <button type="reset" class="reset space-mono-bold">RESET</button>
       </section>
     </form>
   
@@ -57,7 +67,7 @@
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/CMP2007">Carlos Puche</a>.
     </div>
   </main>
 </body>

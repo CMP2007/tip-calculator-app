@@ -1,7 +1,11 @@
+/******************************  background styles ***************************************/
 html{background-color: hsl(185, 41%, 84%)}
 main{
     width: 375px;
     margin: auto;
+    border: 2px solid salmon;
+
+/************************************  items *******************************************/
 }
 .logo{
     padding: 2.5rem 8.5rem;
@@ -9,22 +13,127 @@ main{
 form{
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.5vw;
-    padding: 2rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.sect1_div1, .sect1_div2, .sect1_div3{margin-bottom: 2rem; width: 20rem;}
+
+/************************************ general styles *******************************************/
+
 .sect1_span, .sect2_spanBig{
     color: hsl(186, 14%, 43%);
-    font-weight: 700;
+    display: block;
+    margin-bottom: 0.2rem;
 }
-.sect1_div1, .sect1_div2, .sect1_div3{margin-bottom: 2rem;}
-.sect1_div1{
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+/************************************ first section *******************************************/
+
+/************** text boxes ***************/
+.dollar, .person{
+    position: absolute;
+    transform: translate(1rem, .9rem);
+}
+input[type="number"]{
+    width: 90%;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    text-align: right;
+    padding: .5rem 1rem;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    border-radius: .5rem;
+    outline: none;
+}
+input[type="number"]::placeholder{
+    opacity: 35%;
+    color: hsl(183, 100%, 15%);
+}
+
+/************** buttons ***************/
+.buttonContainer{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 9.5rem 9.5rem;
+    gap: 1rem 1rem;
+}
+.button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: .5rem;
+    font-size: 24px;
+    font-weight: 600;
+    padding: .5rem 0;
+}
+.button:hover{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.button_click{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    opacity: .7;
+}
+
+/************************************ second section *******************************************/
+
+.second{
+    border-radius: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    width: 80%;
+    height: 13rem;
+    padding: 2.5rem 1rem .2rem 1rem;
+}
+.sect2_div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 1.5rem;
+}
+.right{
+    text-align: right;
+    font-size: 32px;
+    color: hsl(172, 67%, 45%);
+}
+.sect2_spanBig{
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 15px;
+}
+.sect2_span{
+    font-size: 13px;
+    color: hsl(184, 14%, 56%);
+}
+.reset{
+    margin-top: .5rem;
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    font-size: 20px;
+    font-weight: 900;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+/* .sect1_div1{
     border: 2px red solid;
 }
 .sect1_div2{
     border: 2px blue solid;
-}
-.sect1_div3 {
+} 
+ .sect1_div3 {
     border: 2px green solid;
-}
+} */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -37,3 +146,6 @@ input[type=number] {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
