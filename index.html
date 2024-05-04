@@ -21,27 +21,28 @@
       <img src="./images/logo.svg" alt="">
     </div>
     <form>
-      <section>
+      <section class="first">
         <div class="sect1_div1">
           <span class="sect1_span space-mono-bold">Bill</span>
           <img src="./images/icon-dollar.svg" class="dollar" alt="">
-          <input type="number" min="0.00" step="0.01" placeholder="0" class="space-mono-bold">
+          <input type="number" min="0.00" step="0.01" placeholder="0" class="space-mono-bold number numberAct">
         </div>
         <div class="sect1_div2">
           <span class="sect1_span space-mono-bold">Select Tip %</span>
-          <div class="buttonContainer">
+          <div class="buttonContainer ">
             <input type="button" class="button space-mono-bold" value="5%">
             <input type="button" class="button space-mono-bold" value="10%">
             <input type="button" class="button space-mono-bold" value="15%">
             <input type="button" class="button space-mono-bold" value="25%">
             <input type="button" class="button space-mono-bold" value="50%">
-            <input type="button" class="button space-mono-bold button_click" value="Custom">
+            <input type="text" class="custom space-mono-bold numberAct " placeholder="Custom">
           </div>
         </div>
         <div class="sect1_div3">
           <span class="sect1_span space-mono-bold">Number of People</span>
+          <span class="sect1_span2 space-mono-bold"> Can´t be zero</span>
           <img src="./images/icon-person.svg" class="person">
-          <input type="number" min="0.00" step="1" placeholder="0" class="space-mono-bold">
+          <input type="number" min="0.00" step="1" placeholder="0" class="space-mono-bold number numberRed"> 
         </div>
       </section>
       <section class="second">
