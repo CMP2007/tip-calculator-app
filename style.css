@@ -3,7 +3,6 @@ html{background-color: hsl(185, 41%, 84%)}
 main{
     width: 375px;
     margin: auto;
-    border: 2px solid salmon;
 
 /************************************  items *******************************************/
 }
@@ -20,28 +19,30 @@ form{
     flex-direction: column;
     align-items: center;
 }
-
 .sect1_div1, .sect1_div2, .sect1_div3{margin-bottom: 2rem; width: 20rem;}
-
 /************************************ general styles *******************************************/
-
 .sect1_span, .sect1_span2, .sect2_spanBig{
     color: hsl(186, 14%, 43%);
     margin-bottom: 0.2rem;
     display: block;
-}
-.sect1_span{
-    margin-bottom: .6rem;
 }
 .space-mono-bold {
     font-family: "Space Mono", monospace;
     font-weight: 900;
     font-style: normal;
   }
-
+input{
+    caret-color: hsl(172, 67%, 45%);
+}
+.button, .number, .reset{
+    cursor: pointer;
+}
 /************************************ first section *******************************************/
 
 /************** text boxes ***************/
+.sect1_span{
+    margin-bottom: .6rem;
+}
 .dollar, .person{
     position: absolute;
     transform: translate(1rem, .9rem);
@@ -72,6 +73,9 @@ input[type=number]::-webkit-inner-spin-button {
 .numberRed{
     outline: solid 2px #b7847a;
 }
+.numberRed::placeholder{
+    opacity: 1;
+}
 /************** buttons ***************/
 .buttonContainer{
     margin-top: 1rem;
@@ -93,9 +97,10 @@ input[type=number]::-webkit-inner-spin-button {
     background-color: rgba(159,232,223,255);
 }
 .buttonAct{
-    background-color: rgba(38, 192, 171, .5);
+    background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
+/****************************************************/
 .custom{
     background-color:hsl(189, 41%, 97%);
     color: hsl(183, 100%, 15%);
@@ -112,6 +117,10 @@ input[type=number]::-webkit-inner-spin-button {
     transform: translate(13.5rem, -1.5rem);
     color: #b7847a;
 }
+.span_hidden{
+    visibility: hidden;
+    position: absolute;
+}
 .sect1_span, .sect1_span2{
     font-size: 14px;
 }
@@ -126,7 +135,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .sect2_div{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 75%;
     margin-bottom: 1.5rem;
 }
 .right{
@@ -144,7 +153,7 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 13px;
     color: hsl(184, 14%, 56%);
 }
-.reset{
+.reset, .resetOff{
     margin-top: .5rem;
     width: 100%;
     background-color: hsl(172, 67%, 45%);
@@ -158,9 +167,13 @@ input[type=number]::-webkit-inner-spin-button {
 .reset:hover{
     background-color: rgba(159,232,223,255);
 }
-
-.attribution { font-size: 11px; text-align: center; }
+.resetOff{
+    opacity: .2;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/********************************** Desktop **********************************/
 
 
 @media (min-width:1140px){
@@ -214,7 +227,7 @@ input[type=number]::-webkit-inner-spin-button {
     input[type="number"]{
         width: 19.5rem;
     }
-    .button{
+    .button, .buttonAct{
         font-size: 22px;
     }
 }

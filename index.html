@@ -25,24 +25,24 @@
         <div class="sect1_div1">
           <span class="sect1_span space-mono-bold">Bill</span>
           <img src="./images/icon-dollar.svg" class="dollar" alt="">
-          <input type="number" min="0.00" step="0.01" placeholder="0" class="space-mono-bold number numberAct">
+          <input type="number" min="0.00" step="0.01" placeholder="0" class="space-mono-bold number numberAct" id="number1">
         </div>
         <div class="sect1_div2">
           <span class="sect1_span space-mono-bold">Select Tip %</span>
           <div class="buttonContainer ">
-            <input type="button" class="button space-mono-bold" value="5%">
-            <input type="button" class="button space-mono-bold" value="10%">
-            <input type="button" class="button space-mono-bold" value="15%">
-            <input type="button" class="button space-mono-bold" value="25%">
-            <input type="button" class="button space-mono-bold" value="50%">
-            <input type="text" class="custom space-mono-bold numberAct " placeholder="Custom">
+            <input type="button" class="act button space-mono-bold" value="5%" id="5">
+            <input type="button" class="act button space-mono-bold" value="10%" id="10">
+            <input type="button" class="act button space-mono-bold" value="15%" id="15">
+            <input type="button" class="act button space-mono-bold" value="25%" id="25">
+            <input type="button" class="act button space-mono-bold" value="50%" id="50">
+            <input type="text" class="act custom space-mono-bold numberAct " placeholder="Custom" id="custom">
           </div>
         </div>
         <div class="sect1_div3">
           <span class="sect1_span space-mono-bold">Number of People</span>
-          <span class="sect1_span2 space-mono-bold"> Can´t be zero</span>
+          <span id="span_hidden" class="span_hidden space-mono-bold"> Can´t be zero</span>
           <img src="./images/icon-person.svg" class="person">
-          <input type="number" min="0.00" step="1" placeholder="0" class="space-mono-bold number numberRed"> 
+          <input type="number" min="0.00" step="1" placeholder="0" class="space-mono-bold number numberAct " id="input2"> 
         </div>
       </section>
       <section class="second">
@@ -51,16 +51,16 @@
             <span class="sect2_spanBig space-mono-bold">Tip Amount</span>
             <span class="sect2_span space-mono-bold">/ person</span>
           </div>
-          <label class="right space-mono-bold">$4.27</label>
+          <label class="right space-mono-bold" id="label1">$0.00</label>
         </div>
         <div class="sect2_div">
           <div>
             <span class="sect2_spanBig space-mono-bold">Total</span>
             <span class="sect2_span space-mono-bold">/ person</span>
           </div>
-          <label class="right space-mono-bold">$32.79</label>
+          <label class="right space-mono-bold" id="label2">$00.00</label>
         </div>
-        <button type="reset" class="reset space-mono-bold">RESET</button>
+        <button type="reset" class="resetOff space-mono-bold" id="reset" disabled>RESET</button>
       </section>
     </form>
   
@@ -71,5 +71,6 @@
       Coded by <a href="https://github.com/CMP2007">Carlos Puche</a>.
     </div>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
