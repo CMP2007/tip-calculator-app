@@ -50,4 +50,4 @@ At this time I want to continue doing challenges and practices based on HTML, CS
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [CMP2007](https://www.frontendmentor.io/profile/CMP2007)
