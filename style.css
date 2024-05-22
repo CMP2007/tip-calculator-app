@@ -20,6 +20,7 @@ form{
     align-items: center;
 }
 .sect1_div1, .sect1_div2, .sect1_div3{margin-bottom: 2rem; width: 20rem;}
+
 /************************************ general styles *******************************************/
 .sect1_span, .sect1_span2, .sect2_spanBig{
     color: hsl(186, 14%, 43%);

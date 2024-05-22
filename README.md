@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/tip-calculator-app-solution-E9x56vIvTc)
+- Live Site URL: (https://cmp2007.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -41,6 +41,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScrip
 - Mobile-first workflow
 
 ### Continued development
@@ -49,6 +50,4 @@ At this time I want to continue doing challenges and practices based on HTML, CS
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
